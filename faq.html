@@ -1,0 +1,230 @@
+<html>
+<style>
+
+/* Overlay for background dimming */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+
+    /* Main content box */
+    .text-box {
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        padding: 20px;
+        margin: 20px auto; /* Adds margins on left and right */
+        max-width: 800px; /* Restricts the box width */
+        border: 2px solid rgb(0, 255, 0); /* Green border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, monaco, monospace;
+    color: rgb(0, 255, 0);
+    background-color: black;
+    background-image: url('img/Vesta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-family: Consolas,monaco,monospace;
+}
+
+p {
+	font-family: Consolas,monaco,monospace; 
+}
+
+.phead {
+	font-family: Consolas,monaco,monospace; 
+	white-space:pre;
+}
+
+.phead a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.greenButton {
+  background-color: #00DD00;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.greenButton:hover {
+  background-color: #00FF00;
+  color: white;
+}
+
+.greenButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.cyanButton {
+  background-color: #00DDDD;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.cyanButton:hover {
+  background-color: #00FFFF;
+  color: white;
+}
+
+.cyanButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.redButton {
+  background-color: #DD0000;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.redButton:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.redButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.copyright {
+	font-family: Consolas,monaco,monospace;
+	text-align: center;
+	color: rgb(0,255,0);
+	font-size: 10px;
+}
+
+</style>
+
+<head>
+<title>Asteroid Connect: FAQ</title>
+<link rel="icon" type="image/png" href="img/AC_icon.png">
+</head>
+
+<body>
+
+<div class="content">
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/index.html"'>Home</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/about.html"'>About</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/tutorial.html"'>Tutorial</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/data.html"'>Data</button>
+<button class="greenButton" disabled>FAQ</button>
+<button class="cyanButton" onclick='window.location.href = "https://www.projectpluto.com/fo.htm"'>Online find_orb</button>
+<button class="cyanButton" onclick='window.location.href = "https://www.minorplanetcenter.net/mpcops/submissions/identifications/"'>Submit to MPC</button>
+</div>
+
+    <div class="text-box">
+	
+    <h1 style="color:rgb(0,255,0);">Frequently Asked Questions</h1>
+    
+    <h2 style="color:rgb(0,255,0);">What is a tracklet?</h2>
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+	Observations of asteroids are made by taking several images of the same area of the sky at intervals of several minutes 
+    to several tens of minutes to detect objects moving relative to the surrounding stars in multiple images that resemble 
+    a flipbook. Each “observation” consists of the time of detection and the position (astrometry) and brightness 
+    (photometry) of the object at that time. A series of these observations concatenated over a number of images is called a 
+    tracklet. Therefore, the star marks displayed in the subject look like fragments of several connected dots.
+	</p>
+    
+    <hr style="color:rgb(0,255,0);">
+    
+    <h2 style="color:rgb(0,255,0);">What are the meanings of the blue, red, and yellow stars, the yellow line, and the pink dotted line in the subject?</h2>
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+	First, the subject represents a specific coordinate range in the sky (on the celestial plane) to which the asteroid observation is projected.
+    The yellow stars are the known tracklets belonging to the object you are investigating in each flipbook. The yellow line connects these observations 
+    to as a visual aid to approximate the minor planet's motion in the sky. The pink dotted lines show the estimated area where the minor planet could be 
+    in the near future of the latest tracklet, but it is of course just an estimation and is therefore not perfect. The red stars are the nearby tracklets 
+    that belong to the dates in between the known (yellow) observations - if a red tracklet is near the yellow line, it could belong to the investigated 
+    object! Blue stars are the observations that are slightly in the future of the latest known observations - if they are close to the pink area, 
+    they may belong to the same object!
+	</p>
+    
+    <hr style="color:rgb(0,255,0);">
+    
+    <h2 style="color:rgb(0,255,0);">Are all star marks within the pink range or near the yellow line the same object you are looking for?</h2>
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+	As the error in the future position of a object increases, the direction (vector) in which the object is moving at that future point in time remains more 
+    or less unchanged. Therefore, even within these ranges, a tracklet whose direction deviates noticably from the yellow star marks or lines is probably not 
+    identical. It is easy to check if the directions are aligned by placing a ruler on the screen. (We will attach a line to the charts soon, don't worry!) 
+    See the tutorial or field guide for more information.
+	</p>
+    
+    <hr style="color:rgb(0,255,0);">
+    
+    <h2 style="color:rgb(0,255,0);">How did you create the first pair linking the two observations?</h2>
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+	Some of these links were reported by the measurers of the astrometric data to belong to the same object based on the predictions made from earlier tracklets. 
+    Such reports are easily extractable from the ITF since they are reported under the same internal code name. It doesn't happen too often, but measurers 
+    can make mistakes too. And since it is very rare to find three days of links with the same name, we need to look for the third tracklet other ways like 
+    this project. These observations often occur in measurement reports from the COIAS project, which detects asteroids from the HSC-SSP survey of the Subaru 
+    Telescope.<br><br>
+    
+    Some other pairs were created by the Connectonomicon software that powers this project, by scanning parts of the sky in chunks and trying to fit tracklets
+    that are likely to belong to the same object.
+	</p>
+    
+    <hr style="color:rgb(0,255,0);">
+    
+    <h2 style="color:rgb(0,255,0);">What is the difference between the ITF-ITF and ITF-DES workflows?</h2>
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+	In ITF-ITF, the yellow tracklet is the tracklet of the ITF. In other words, it is an attempt to find a third observation from the ITF and give birth to a new provisonal code(it means new asteroid!).<br><br>
+
+    In ITF-DES, yellow tracklets are already known objects. That is, it is an attempt to find additional observations of already known objects from the ITF and improve the orbital accuracy.<br><br>
+
+    There is no difference whatsoever in the screen legend displayed, usage, etc., so it probably looks exactly the same kind of workflow to you.
+	</p>
+	<br><br>
+    
+    </div>
+
+</body>
+
+</html>

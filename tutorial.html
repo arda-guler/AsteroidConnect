@@ -1,0 +1,195 @@
+<html>
+<style>
+
+/* Overlay for background dimming */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+
+    /* Main content box */
+    .text-box {
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        padding: 20px;
+        margin: 20px auto; /* Adds margins on left and right */
+        max-width: 800px; /* Restricts the box width */
+        border: 2px solid rgb(0, 255, 0); /* Green border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, monaco, monospace;
+    color: rgb(0, 255, 0);
+    background-color: black;
+    background-image: url('img/Vesta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-family: Consolas,monaco,monospace;
+}
+
+p {
+	font-family: Consolas,monaco,monospace; 
+}
+
+.phead {
+	font-family: Consolas,monaco,monospace; 
+	white-space:pre;
+}
+
+.phead a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.greenButton {
+  background-color: #00DD00;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.greenButton:hover {
+  background-color: #00FF00;
+  color: white;
+}
+
+.greenButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.cyanButton {
+  background-color: #00DDDD;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.cyanButton:hover {
+  background-color: #00FFFF;
+  color: white;
+}
+
+.cyanButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.redButton {
+  background-color: #DD0000;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.redButton:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.redButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.copyright {
+	font-family: Consolas,monaco,monospace;
+	text-align: center;
+	color: rgb(0,255,0);
+	font-size: 10px;
+}
+
+</style>
+
+<head>
+<title>Asteroid Connect: Tutorial</title>
+<link rel="icon" type="image/png" href="img/AC_icon.png">
+</head>
+
+<body>
+
+<div class="content">
+<button class="greenButton" onclick='window.location.href = "arda-guler.github.io/AsteroidConnect/index.html"'>Home</button>
+<button class="greenButton" onclick='window.location.href = "arda-guler.github.io/AsteroidConnect/index.html"'>About</button>
+<button class="greenButton" disabled>Tutorial</button>
+<button class="greenButton" onclick='window.location.href = "test"'>Data</button>
+<button class="greenButton" onclick='window.location.href = "test"'>FAQ</button>
+<button class="cyanButton" onclick='window.location.href = "test"'>Online find_orb</button>
+<button class="cyanButton" onclick='window.location.href = "test"'>Submit to MPC</button>
+</div>
+
+    <div class="text-box">
+    <h1 style="color:rgb(0,255,0);">Basic Tutorial:<br>How do I identify asteroids?</h1>
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px;">
+	Head to the "Data" page. In there, you will find three categories of data. Essentially, they are going to be very similar if you
+    are new to this effort. I suggest ITF-ITF if you don't have any idea what to pick.<br><br>
+    
+    In that page, you will find astrometry charts and some text below them. The astrometry chart indicates the tracklets we are investigating: <br>
+     - Yellow stars are a batch of tracklets that are likely to belong to the same object<br>
+     - Red stars are batches of tracklets that might belong to the same object, observed between the oldest and latest yellow tracklets<br>
+     - Blue stars are batches of tracklets that might belong to the same object, observed some time after the latest yellow tracket<br><br>
+     
+    These potential linkages were identified by the <a href="https://github.com/arda-guler/Connectonomicon">Connectonomicon</a> software, but since the tolerances used were quite high, a lot of them
+    are probably false positives. For the eventual decision, an orbit fit must be done.<br><br>
+    
+    You can use any software that can handle heliocentric
+    orbits, including that of Connectonomicon itself, but <a href="https://www.projectpluto.com/fo.htm">Bill Gray's find_orb</a> will be quite a lot of faster and it is usually more user-friendly.<br><br>
+    
+    The text files below the images are the astrometry data. The first lines before the empty lines are the yellow tracklets, the rest are blue and red tracklets.<br><br>
+    
+    The first 13 characters of each line is the designation of the minor planet. Take the astrometry data of the yellow tracklets, and insert them into the 
+    orbit determination software. If the RA-DEC residuals are low overall, you can work on these tracklets. Generally, to submit an object for identification,
+    you need at least 3 distinct nights of observation for an object. If the yellow tracklets do not cover 3 distinct nights, try to match them with blue
+    and yellow tracklets in the same data file, and attempt to fit orbits. If the orbit fit succeeds and the residuals are low, you can submit the identification
+    to the MPC for final checking. To prepare your submission, read <a href="https://minorplanetcenter.net/mpcops/documentation/identifications/submission-format/">MPC's guidelines for submission formatting</a>.
+     
+	</p>
+    
+    </div>
+
+</body>
+
+</html>

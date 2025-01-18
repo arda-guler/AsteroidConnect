@@ -1,0 +1,185 @@
+<html>
+<style>
+
+/* Overlay for background dimming */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+
+    /* Main content box */
+    .text-box {
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        padding: 20px;
+        margin: 20px auto; /* Adds margins on left and right */
+        max-width: 800px; /* Restricts the box width */
+        border: 2px solid rgb(0, 255, 0); /* Green border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, monaco, monospace;
+    color: rgb(0, 255, 0);
+    background-color: black;
+    background-image: url('img/Vesta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-family: Consolas,monaco,monospace;
+}
+
+p {
+	font-family: Consolas,monaco,monospace; 
+}
+
+.phead {
+	font-family: Consolas,monaco,monospace; 
+	white-space:pre;
+}
+
+.phead a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.greenButton {
+  background-color: #00DD00;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.greenButton:hover {
+  background-color: #00FF00;
+  color: white;
+}
+
+.greenButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.cyanButton {
+  background-color: #00DDDD;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.cyanButton:hover {
+  background-color: #00FFFF;
+  color: white;
+}
+
+.cyanButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.redButton {
+  background-color: #DD0000;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.redButton:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.redButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.copyright {
+	font-family: Consolas,monaco,monospace;
+	text-align: center;
+	color: rgb(0,255,0);
+	font-size: 10px;
+}
+
+</style>
+
+<head>
+<title>Asteroid Connect: Home</title>
+<link rel="icon" type="image/png" href="img/AC_icon.png">
+</head>
+
+<body>
+
+<div class="content">
+<button class="greenButton" disabled>Home</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/about.html"'>About</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/tutorial.html"'>Tutorial</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/data.html"'>Data</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/faq.html"'>FAQ</button>
+<button class="cyanButton" onclick='window.location.href = "https://www.projectpluto.com/fo.htm"'>Online find_orb</button>
+<button class="cyanButton" onclick='window.location.href = "https://www.minorplanetcenter.net/mpcops/submissions/identifications/"'>Submit to MPC</button>
+</div>
+
+    <div class="text-box">
+    <div>
+	<img src="img/AC_icon.png" class="center" style="width:50%;height:auto;">
+	</div>
+	<br><br>
+    
+	<h1 style="color:rgb(0,255,0);">Asteroid Connect</h1>
+	<p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">Welcome to Project Asteroid Connect!<br><br>
+	The Solar System is full of minor planets - asteroids, distant icy bodies and impacting objects! Help us link minor planet observation 
+    tracklets and help determine their orbits to map the Solar System and be a part of the space exploration adventure!<br><br>
+	</p>
+	<br>
+    
+    <div style="text-align: center;">
+        <button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/tutorial.html"'>Get Started</button>
+    </div>
+    
+    </div>
+
+</body>
+
+</html>

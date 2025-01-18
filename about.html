@@ -1,0 +1,245 @@
+<html>
+<style>
+
+/* Overlay for background dimming */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+
+    /* Main content box */
+    .text-box {
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        padding: 20px;
+        margin: 20px auto; /* Adds margins on left and right */
+        max-width: 800px; /* Restricts the box width */
+        border: 2px solid rgb(0, 255, 0); /* Green border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, monaco, monospace;
+    color: rgb(0, 255, 0);
+    background-color: black;
+    background-image: url('img/Vesta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-family: Consolas,monaco,monospace;
+}
+
+p {
+	font-family: Consolas,monaco,monospace; 
+}
+
+.phead {
+	font-family: Consolas,monaco,monospace; 
+	white-space:pre;
+}
+
+.phead a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.greenButton {
+  background-color: #00DD00;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.greenButton:hover {
+  background-color: #00FF00;
+  color: white;
+}
+
+.greenButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.cyanButton {
+  background-color: #00DDDD;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.cyanButton:hover {
+  background-color: #00FFFF;
+  color: white;
+}
+
+.cyanButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.redButton {
+  background-color: #DD0000;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Consolas,monaco,monospace; 
+  font-size: 12px;
+} 
+
+.redButton:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.redButton:disabled {
+  background-color: #999999;
+  color: black;
+}
+
+.copyright {
+	font-family: Consolas,monaco,monospace;
+	text-align: center;
+	color: rgb(0,255,0);
+	font-size: 10px;
+}
+
+</style>
+
+<head>
+<title>Asteroid Connect: About</title>
+<link rel="icon" type="image/png" href="img/AC_icon.png">
+</head>
+
+<body>
+
+<div class="content">
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/index.html"'>Home</button>
+<button class="greenButton" disabled>About</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/tutorial.html"'>Tutorial</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/data.html"'>Data</button>
+<button class="greenButton" onclick='window.location.href = "https://arda-guler.github.io/AsteroidConnect/faq.html"'>FAQ</button>
+<button class="cyanButton" onclick='window.location.href = "https://www.projectpluto.com/fo.htm"'>Online find_orb</button>
+<button class="cyanButton" onclick='window.location.href = "https://www.minorplanetcenter.net/mpcops/submissions/identifications/"'>Submit to MPC</button>
+</div>
+
+    <div class="text-box">
+	
+    
+    <h1 style="color:rgb(0,255,0);">What are we doing here, exactly?</h1>
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+	Asteroid Connect is a project for linking minor planet observation tracklets and helping International Astronomical Union's
+    Minor Planet Center determine the orbits of minor planets and bookkeep the database of known objects, allowing us to map the
+    Solar System.<br><br>
+    Large sky surveys and enthusiastic amateurs alike observe minor planets (small objects like asteroids that orbit the Sun).<br><br>
+    In particular, the Large-Scale Survey takes pictures of part of sky as if scanning the entire sky, automatically detects a huge 
+    number of moving objects (i.e. asteroids) from a huge amount of images, and reports the results to the Minor Planet Center 
+    (MPC, an international organization affiliated with the International Astronomical Union that coordinates the observations of 
+    asteroids around the world).<br><br>
+
+    Currently, more than 1.4 million asteroids have been found, the majority of which have accurately determined orbits based on 
+    long-term observations. The trajectories of these objects can be predicted with extreme accuracy, and the answer to where they 
+    will be in the sky tonight is an easy one to figure out. If such an object with a precise orbit is detected in a series of images 
+    taken by an observer of the sky, the observer can immediately recognize the object using software databases. The observation is 
+    then reported along with the name of the object.<br><br>
+
+    On the other hand, if the location of a detected object does not match the predicted location of an already discovered object, 
+    it is reported to MPC as an undiscovered asteroid with an internal code assigned by each observer for convenience. These observations 
+    that are not linked to already known asteroids are stocked by MPC as ITF (Isolated Tracklet File), which are available on the MPC website.<br><br>
+
+    However, some of known asteroids do not have well-defined orbits. Since these objects' current positions cannot be accurately predicted, 
+    even if they appear in images observed tonight, they will be recognized as “unidentified asteroids” without being noticed as one 
+    particular known asteroid. Such observations can also end up in the ITF, waiting to be linked.<br><br>
+
+    In addition, a new asteroid must be observed on multiple nights before it can be registered (assigned a provisional code) as a new object.
+    However, with the exception of some near-Earth asteroids and amateur observations, large-scale surveys do not perform the tedious and 
+    inefficient process of follow-up obserbation new objects detected on one night, one by one, for multiple nights, and reporting them as 
+    tracked observations to the MPC.<br><br>
+    
+    In other words, the ITF usually remains stocked with identical combinations of new objects.
+	</p>
+    
+    <img src="img/linkage.png" width="720" style="margin-left: 40px;">
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px;">
+	The more observations we make and identify, the better we can predict where they will be in the future.
+	</p>
+    
+    <h1 style="color:rgb(0,255,0);">How did this project come into existence?</h1>
+	<p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+    Asteroid Connect originated as a Zooniverse citizen-science project built by me (an amateur astronomer 
+    from Turkey) and InoSenpai (an amateur astronomer from Japan). It might have been the first astronomy citizen-science project
+    built entirely by citizen scientists, and I am proud of the work that went into it. It produced several results too, identifying
+    some main belt asteroids. However, during the testing phase, I realized that Zooniverse might not have been the most appropriate 
+    platform for the sort of work I was doing, and decided to move to my own website.<br><br>
+    
+    Asteroid Connect heavily draws inspiration from the citizen-science project COIAS (where I and InoSenpai met) and The Daily Minor
+    Planet (and somewhat from Backyard Worlds: Cool Neighbors too). While participating in these projects, I made it my task to try
+    and identify new asteroids from submitted observations. I have identified several main-belt asteroids (MBAs) as well as several 
+    Trans-Neptunian Objects (TNOs), and I accidentally found observations belonging to Falcon Upper Stage with the Tesla car... 
+    (The 2018 CN41 incident - I initially thought it was a Near-Earth Object (NEO).)<br><br>
+    
+    While doing the identification work, as a side project, I programmed a software called "Connectonomicon" to help me link 
+    tracklets. A modified version of it now powers Asteroid Connect by generating the data for the project. If you wish, you can also
+    use it as a standalone software.
+	</p>
+    
+    <h1 style="color:rgb(0,255,0);">Acknowledgements</h1>
+	<p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
+    This research makes use of data and/or services provided by the International Astronomical Union's Minor Planet Center.<br><br>
+
+    Connectonomicon, the software we built to generate and check the charts, makes use of Bill Gray's find_orb orbit fitting software. 
+    You can learn more about it (and more astronomy tools) in the Project Pluto website.<br><br>
+
+    In addition, many of the observations currently used in the data set were measured by volunteer users of COIAS, 
+    a citizen science project (not hosted on Zooniverse) to search for asteroids in the archival footage of Subaru Telescope's 
+    Hyper Suprime Cam.<br><br>
+
+    (We are not affiliated with the IAU or the MPC, or the COIAS development team.)
+    </p>
+	<br><br>
+    
+    
+    
+    </div>
+
+</body>
+
+</html>
