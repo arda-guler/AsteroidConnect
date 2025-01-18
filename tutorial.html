@@ -164,9 +164,12 @@ p {
 
     <div class="text-box">
     <h1 style="color:rgb(0,255,0);">Basic Tutorial:<br>How do I identify asteroids?</h1>
-    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px;">
+    <p style="color:rgb(0,255,0); margin-left: 40px; margin-right: 40px; text-align: justify;">
 	Head to the "Data" page. In there, you will find three categories of data. Essentially, they are going to be very similar if you
     are new to this effort. I suggest ITF-ITF if you don't have any idea what to pick.<br><br>
+    
+    <img src="img/tut_ss1.png" width="720"><br><br>
+    <img src="img/tut_ss2.png" width="720"><br><br>
     
     In that page, you will find astrometry charts and some text below them. The astrometry chart indicates the tracklets we are investigating: <br>
      - Yellow stars are a batch of tracklets that are likely to belong to the same object<br>
@@ -181,11 +184,25 @@ p {
     
     The text files below the images are the astrometry data. The first lines before the empty lines are the yellow tracklets, the rest are blue and red tracklets.<br><br>
     
+    <img src="img/tut_ss3.png" width="720"><br><br>
+    
     The first 13 characters of each line is the designation of the minor planet. Take the astrometry data of the yellow tracklets, and insert them into the 
     orbit determination software. If the RA-DEC residuals are low overall, you can work on these tracklets. Generally, to submit an object for identification,
     you need at least 3 distinct nights of observation for an object. If the yellow tracklets do not cover 3 distinct nights, try to match them with blue
-    and yellow tracklets in the same data file, and attempt to fit orbits. If the orbit fit succeeds and the residuals are low, you can submit the identification
-    to the MPC for final checking. To prepare your submission, read <a href="https://minorplanetcenter.net/mpcops/documentation/identifications/submission-format/">MPC's guidelines for submission formatting</a>.
+    and yellow tracklets in the same data file, and attempt to fit orbits. <br><br>
+    
+    If you use find_orb, it will print the residuals for you. If you are an expert, you won't need this tutorial; but if you are still new, here are several suggestions:<br><br>
+     - Make sure the mean residual is lower than about 0.25 arcseconds<br>
+     - Make sure individual tracklet residuals are on the order of 0.2 arcseconds or below, ideally below 0.10 arcseconds.<br>
+     - Check the +/- uncertainties of the orbital elements and make sure they are low. There is no definite numerical guide for this, inclination and longitude of ascending node
+     are usually easier to lower compared to semi-major axis, eccentricity and longitude of perihelion, especially for short tracklets.<br>
+     - Make sure the orbital uncertainty is acceptable, see if it is below 11. Below 8 or 9 is ideal for short tracklets.<br><br>
+    
+    <img src="img/tut_ss4.png" width="720"><br><br>
+    
+    If the orbit fit succeeds and the residuals are low, you can submit the identification
+    to the MPC for final checking. To prepare your submission, read 
+    <a href="https://minorplanetcenter.net/mpcops/documentation/identifications/submission-format/">MPC's guidelines for submission formatting</a>.
      
 	</p>
     
